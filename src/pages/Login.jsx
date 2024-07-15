@@ -73,7 +73,7 @@ const Register = () => {
           {err && <span>User not found</span>}
         </form>
         <p>
-          Have a account? <Link to="/register">Login</Link>
+          Dont have a account? <Link to="/register">Register</Link>
         </p>
       </div>
     </div>
