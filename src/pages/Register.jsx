@@ -1,4 +1,5 @@
 import React from 'react';
+import Add from "../img/addAvatar.svg";
 import '../style.scss';
 import {useState} from 'react';
 import {createUserWithEmailAndPassword, updateProfile} from 'firebase/auth';
@@ -70,7 +71,7 @@ const Register = () => {
                     <input style={{display:"none"}} type='file' id='file'/>
 
                     <label htmlFor='file'>
-                        <img src="../img/addAvatarsymbol.png" />
+                        <img src={Add} />
                         <span>Profile Picture</span>
                         </label>
                     <button>Sign Up</button>

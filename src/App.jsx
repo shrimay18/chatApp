@@ -24,9 +24,9 @@ function App() {
           <Route
             index
             element={
-              
+              <ProtectedRoute>
                 <Home />
-              
+              </ProtectedRoute>  
             }
           />
           <Route path="login" element={<Login />} />

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
-// import Img from "../img/img.png";
-// import Attach from "../img/attach.png";
+import Img from "../img/img.svg";
+import Attach from "../img/attach.svg";
 import { AuthContext } from "../context/AuthContext";
 import { ChatContext } from "../context/ChatContext";
 import {
@@ -82,7 +82,7 @@ const Input = () => {
         value={text}
       />
       <div className="send">
-        <img src="" alt="" />
+        <img src={Attach} alt="" />
         <input
           type="file"
           style={{ display: "none" }}
@@ -90,7 +90,7 @@ const Input = () => {
           onChange={(e) => setImg(e.target.files[0])}
         />
         <label htmlFor="file">
-          <img src="" alt="" />
+          <img src={Img} alt="" />
         </label>
         <button onClick={handleSend}>Send</button>
       </div>
