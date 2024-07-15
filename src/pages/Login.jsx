@@ -63,7 +63,7 @@ const Register = () => {
     <div className="formContainer">
       <div className="formWrapper">
         <span className="logo">VideoVerse Chat</span>
-        <span className="title">Register</span>
+        <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
           <input required type="email" placeholder="email" />
           <input required type="password" placeholder="password" />
